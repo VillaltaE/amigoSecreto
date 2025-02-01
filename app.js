@@ -11,7 +11,9 @@ const regex = /^[a-zA-Z]+$/;
 
 if (!regex.test(amigo)) {
     alert("El nombre solo debe contener letras, sin espacios, números ni caracteres especiales.");
-    return; // Detiene la ejecución de la función
+    limpiarCaja();
+    return // Detiene la ejecución de la función
+    
 }
 
 else {amigos.push(amigo);
