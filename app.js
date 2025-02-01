@@ -6,13 +6,14 @@ function agregarAmigo() {
 let amigo = document.getElementById('amigo').value;
 
 if (amigo == "") {alert("Por favor, inserte un nombre.");}
-  // Expresión regular que permite solo letras (sin espacios, números ni caracteres especiales)
-  const regex = /^[a-zA-Z]+$/;
+// Expresión regular que permite solo letras (sin espacios, números ni caracteres especiales)
+const regex = /^[a-zA-Z]+$/;
 
-if (!regex.test(nombre)) {
+if (!regex.test(amigo)) {
     alert("El nombre solo debe contener letras, sin espacios, números ni caracteres especiales.");
     return; // Detiene la ejecución de la función
 }
+
 else {amigos.push(amigo);
     limpiarCaja();
     }
